@@ -309,7 +309,7 @@ static int is_satiator_present(void) {
     return (CDB_REG_CR3 & 0xff) == 2;
 }
 
-static enum satiator_mode cur_mode = s_unknown;
+static enum satiator_mode cur_mode = s_cdrom;
 int s_mode(enum satiator_mode mode) {
     /* Switch between emulating a CD drive and exposing the SD card API.
      * This function returns:
